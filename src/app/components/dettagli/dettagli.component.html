@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <div class="row" *ngIf="product; else loading">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p>{{product.description}}</p>
+          <p>{{product.price}}</p>
+          <button (click)="aggiungi(product)">Aggiungi al carrello</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<ng-template #loading>
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading</span>
+  </div>
+</ng-template>
+

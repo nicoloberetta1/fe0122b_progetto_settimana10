@@ -1,0 +1,28 @@
+{
+   "products":[
+     {
+       "id": 1,
+       "name": "Samsung Galaxy S22",
+       "price": 900,
+       "description":" L'ultimo nato nella famiglia galaxy"
+     },
+     {
+      "id": 2,
+      "name": "OnePlus 10 pro",
+      "price": 990,
+      "description":" L'ultimo nato nella famiglia OnePlus"
+    },
+    {
+      "id": 3,
+      "name": "Apple Iphone 13",
+      "price": 800,
+      "description":" L'ultimo nato nella famiglia Apple"
+    },
+    {
+      "id": 4,
+      "name": "Nokia 6630",
+      "price": 50,
+      "description":" L'ultimo nato nella famiglia Nokia"
+    }
+   ]
+}

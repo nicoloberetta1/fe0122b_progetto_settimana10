@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <div class="row" *ngIf="products; else loading">
+    <div class="col-6 mb-3" *ngFor="let product of products; let i = index" >
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p>{{product.description}}</p>
+          <p>{{product.price}}</p>
+          <button (click)="dettagli(product.id)">Dettagli</button>
+          <!--<a class="btn btn-danger" (click)="cancella(foto.id, 1)">🗑️</a>
+          <a class="btn btn-success" (click)="aggiungiFavoriti()">Mi piace</a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading</span>
+  </div>
+</ng-template>
